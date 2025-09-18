@@ -1,0 +1,14 @@
+/*Posicionamento*/
+.caixa-posicionada {
+    width: 150px;
+    height: 100px;
+    background: tomato;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border-radius: 8px;
+    top: 200px;
+    right: 20px;
+}
