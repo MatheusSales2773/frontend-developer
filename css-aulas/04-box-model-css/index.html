@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-
+scale=1.0">
+
+<title>Box Model na Prática</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<h1>Entendendo o Box Model</h1>
+<section class="demonstracao">
+<h2>Visualização do Box Model</h2>
+<div class="caixa-exemplo">
+<p>Esta caixa demonstra o Box Model com:</p>
+<ul>
+<li>Conteúdo (este texto)</li>
+<li>Padding (espaço interno)</li>
+<li>Border (borda visível)</li>
+<li>Margin (espaço externo)</li>
+</ul>
+</div>
+</section>
+
+<section class="comparacao">
+<h2>Comparação: content-box vs border-box</h2>
+<div class="exemplo-content-box">
+<h3>content-box (padrão)</h3>
+<p>Width = apenas conteúdo</p>
+<p>Largura total = width + padding + border</p>
+</div>
+<div class="exemplo-border-box">
+<h3>border-box</h3>
+<p>Width = conteúdo + padding + border</p>
+<p>Largura total = width</p>
+</div>
+</section>
+<section class="margens">
+<h2>Trabalhando com Margens</h2>
+<div class="margem-exemplo-1">Margem uniforme
+(20px)</div>
+<div class="margem-exemplo-2">Margem vertical/horizontal
+(30px 15px)</div>
+<div class="margem-exemplo-3">Margem específica (10px
+20px 30px 40px)</div>
+<div class="margem-centralizada">Centralizada com margin: 0
+auto</div>
+</section>
+<section class="paddings">
+<h2>Explorando Padding</h2>
+<div class="padding-exemplo-1">Padding pequeno
+(10px)</div>
+<div class="padding-exemplo-2">Padding médio (20px)</div>
+<div class="padding-exemplo-3">Padding grande (40px)</div>
+<div class="padding-assimetrico">Padding assimétrico (10px
+30px 20px 15px)</div>
+
+</section>
+<section class="bordas">
+<h2>Estilos de Borda</h2>
+<div class="borda-solida">Borda sólida</div>
+<div class="borda-tracejada">Borda tracejada</div>
+<div class="borda-pontilhada">Borda pontilhada</div>
+<div class="borda-dupla">Borda dupla</div>
+<div class="borda-arredondada">Borda arredondada</div>
+<div class="borda-colorida">Bordas coloridas diferentes</div>
+</section>
+<section class="layout-pratico">
+<h2>Layout Prático: Cards</h2>
+<div class="cards-container">
+<div class="card">
+<h3>Card 1</h3>
+<p>Este card demonstra o uso prático do Box Model com
+padding, margin e border.</p>
+<button class="btn">Saiba Mais</button>
+</div>
+<div class="card">
+<h3>Card 2</h3>
+<p>Observe como o espaçamento interno e externo cria
+uma aparência profissional.</p>
+<button class="btn">Saiba Mais</button>
+</div>
+<div class="card">
+<h3>Card 3</h3>
+<p>O Box Model é fundamental para criar layouts
+consistentes e atraentes.</p>
+<button class="btn">Saiba Mais</button>
+</div>
+</div>
+</section>
+
+</div>
+</body>
+</html>

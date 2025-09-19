@@ -1,0 +1,40 @@
+body h1 {
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    border: 7px solid;
+    border-radius: 30px;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.exemplo-1 {
+    justify-content: center;
+    border: 5px solid;
+    border-radius: 30px;
+    Width: 200px;
+    Padding: 20px;
+    Margin: 15px;
+}
+
+.exemplo-2 {
+    justify-content: center;
+    border: 5px solid;
+    border-radius: 30px;
+    Width: 200px;
+    Padding: 20px;
+    Margin: 15px;
+}
+
+.exemplo-3 {
+    justify-content: center;
+    border: 5px solid;
+    border-radius: 30px;
+    Width: 300px;
+    Padding: 20px;
+    Margin: 15px;
+}
