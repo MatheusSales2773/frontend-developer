@@ -1,0 +1,21 @@
+footer {
+    background-color: black;
+    color: beige;
+    padding: 20px;
+}
+
+footer div{
+    margin-bottom: 10px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
+@media(max-width:600px){
+    footer div{
+        display: block;
+        margin-bottom: 15px;
+    }
+}
