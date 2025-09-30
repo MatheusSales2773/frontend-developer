@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.habilidades li{
+    list-style-type: none;
+}
+
+.email-icone{
+    width: 17px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.celular-icone{
+    width: 17px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.linkedin-icone{
+    width: 16px;
+    margin-left: 4px;
+    margin-right: 4px;
+}   
+
+.linkedin-text{
+    text-decoration: none;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact button {
+    width: 100%;
+    padding: 10px;
+    background-color: #187930;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+footer{
+    background-color: black;
+    padding: 20px;
+    color: rgb(255, 255, 255);  
+}
