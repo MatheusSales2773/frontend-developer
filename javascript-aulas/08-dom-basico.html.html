@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro script</title>
+</head>
+
+<body>
+    <h1>Olá, mundo!</h1>
+    <script>
+        console.log("Olá, mundo");
+        alert("Bem-vindo ao Javascript.");
+
+        //Declaração de variaveis
+        let limite = 10;
+        let mensagem = "";
+
+        //Estrutura de repetição (for)
+        for(let i = 1; i<= limite; i++){
+            if (i % 2 === 0){
+                mensagem += "<span class='par'>" + i + "é par </span><br>";
+            }else{
+                mensagem += "<span class='impar'>" + i + 'é impar </span><br>';
+            }
+        }
+        //Mostrar resultado no navegador
+       
+    </script>
+    <p id="paragrafo1">Primeiro paragrafo</p>
+    <p class="texto">Outro parágrafo</p>
+    <div class="texto">Div com classe.</div>
+
+    <script>
+        const porId = document.querySelector("#paragrafo1");
+        console.log("Por ID:", porId);
+        
+        const porClasse =  document.querySelector(".texto");
+        console.log("Por Classe:",porClasse);
+
+        const porTag = document.querySelector("p");
+        console.log("Por Tag:", porTag);
+    </script>
