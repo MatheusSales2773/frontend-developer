@@ -27,6 +27,7 @@ Repositório de estudos do curso do SENAI - Desenvolvedor Front-End (200 horas).
 
 ### Projetos Completos
 - `projetos/data-study-site/` — Site sobre Data Science com HTML, CSS e conceitos responsivos
+- `projetos/curriculo-prova/` — Página de currículo responsiva (header, conteúdo e footer) - exemplo prático em HTML/CSS.
 
 ## Destaques do Repositório
 
