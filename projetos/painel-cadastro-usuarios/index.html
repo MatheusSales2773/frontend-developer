@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Cadastro e Consulta de Usuários</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body style="background-color: #edefe5;">
+    <nav class="navbar navbar-expand-lg " style="background-color: #999999;">
+        <div class="container-fluid ">
+            <a class="navbar-brand text-white" href="#">Painel de Usuários</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link active" style="color: #edefe5;" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" style="color: #edefe5;" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" style="color: #edefe5;" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h3 class="text-center mt-3">Cadastrar usuario</h3>
+
+    <div class="container mt-4" style="background-color: #999999; border-radius: 10px;">
+        <form id="form-cadastro" class="row g-3 p-2">
+            <div class="col-md-6">
+                <label for="inputAddress" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="Ex: José alves nogueira">
+            </div>
+            <div class="col-md-6">
+                <label for="inputEmail4" class="form-label">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Ex: josealves@gmail.com">
+            </div>
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Idade</label>
+                <input type="number" class="form-control" id="inputPassword4" placeholder="Ex: 20" min="18" max="110">
+            </div>
+            <div class="col-md-6">
+                <label for="inputAddress2" class="form-label">Cargo</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Ex: Advogado">
+            </div>
+            <div class="col-12 text-center pb-2">
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+    <hr>
+
+
+
+    <section id="lista-usuarios" class="container my-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h4 class="m-0">Lista de Usuários</h4>
+            <input id="busca-usuarios" class="form-control form-control-sm w-25" type="text"
+                placeholder="Buscar por nome...">
+        </div>
+
+        <!-- Template que o JS deve clonar para criar cada card -->
+        <template id="user-card-template">
+            <div class="col-sm-6 col-md-4 col-lg-3">
+                <div class="user-card p-3 h-100" data-id="">
+                    <div class="d-flex justify-content-between align-items-start mb-2">
+                        <h5 class="user-name mb-0">Nome Sobrenome</h5>
+                        <small class="user-age text-muted">25</small>
+                    </div>
+                    <p class="user-email mb-1">email@exemplo.com</p>
+                    <p class="user-role text-muted mb-2">Cargo</p>
+                    <div class="d-flex justify-content-end">
+                        <button class="btn btn-sm btn-outline-danger btn-remove" title="Remover">Remover</button>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <!-- Grid onde os cards serão inseridos dinamicamente pelo JS -->
+        <div id="cards-grid" class="row g-3"></div>
+
+        <!-- Placeholder quando não houver usuários -->
+        <p id="lista-vazia" class="text-muted mt-3" style="display: none;">Nenhum usuário cadastrado.</p>
+    </section>
+
+    </section>
+
+    <div class="border-top px-5" style="background-color: #999999; width: 100%; position: fixed; bottom: 0;">
+
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-1 my-2">
+
+            <p class="col-md-4 mb-0 text-white">&copy; 2025 Company, Inc</p>
+
+            <a href="/"
+                class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+                aria-label="Bootstrap">
+                <img src="https://www.senairs.org.br/sites/default/files/logos/logos_senai_branco.png" width="130"
+                    alt="Logo Senai">
+            </a>
+
+            <div class="col-md-4 text-center text-md-end">
+                <h4 class="text-white text-center">Equipe:</h4>
+
+                <ul class="list-unstyled mb-0">
+                    <li>
+                        <p class="text-white mb-2 text-center">Luis Fernando Melo da Silva</p>
+                    </li>
+                    <li>
+                        <p class="text-white mb-1 text-center">Matheus Sales Carvalho</p>
+                    </li>
+                    <li>
+                        <p class="text-white mb-0 text-center">Helemeylson Lins dos Santos</p>
+                    </li>
+                </ul>
+            </div>
+
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

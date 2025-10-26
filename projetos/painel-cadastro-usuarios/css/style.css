@@ -1,0 +1,62 @@
+.navbar .btn.btn-outline-secondary {
+    background-color: #ffffff;
+    color: var(--bs-secondary, #6c757d);
+    border-color: var(--bs-secondary, #6c757d);
+    transition: background-color .15s ease, color .15s ease, border-color .15s ease;
+}
+
+.navbar .btn.btn-outline-secondary:hover,
+.navbar .btn.btn-outline-secondary:focus,
+.navbar .btn.btn-outline-secondary:active {
+    background-color: var(--bs-secondary, #6c757d);
+    color: #ffffff;
+    border-color: var(--bs-secondary, #6c757d);
+}
+
+.form-label {
+    color: #ffffff !important;
+}
+
+.form-control {
+    background-color: #ffffff !important;
+    color: #212529 !important; /* texto escuro dentro do input */
+    border-color: rgba(0,0,0,0.15);
+}
+
+.user-card {
+    background: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    transition: transform 150ms ease, box-shadow 150ms ease;
+    cursor: default;
+    min-height: 120px;
+}
+
+.user-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+}
+
+.user-card .user-name {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.user-card .user-email {
+    font-size: 0.9rem;
+    color: #444;
+    word-break: break-word;
+}
+
+.user-card .user-role {
+    font-size: 0.85rem;
+}
+
+.btn-remove {
+    pointer-events: auto; /* permite clique no botão mesmo se container tiver dblclick */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 576px) {
+    .user-card { padding: 0.8rem; }
+}

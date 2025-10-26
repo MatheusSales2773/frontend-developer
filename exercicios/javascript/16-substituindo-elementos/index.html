@@ -1,0 +1,35 @@
+<!--
+1. No <script>, selecione #textoOriginal e #botaoTrocar.
+2. Ao clicar:
+
+• Crie um novo <p> com texto "Texto substituído dinamicamente!".
+• Opcional: configure novoParagrafo.style.transition = "opacity 0.4s" e inicie
+com opacity = 0 para um efeito.
+• Substitua #textoOriginal por novoParagrafo com
+textoOriginal.replaceWith(novoParagrafo).
+• Se implementou a transição, garanta que o novo parágrafo mude opacity
+para 1 usando requestAnimationFrame ou setTimeout(..., 0) após a
+substituição.
+
+3. Requisitos técnicos obrigatórios
+• Uso de replaceWith.
+• Se usar animação, implementá-la sem recorrer a bibliotecas externas.
+• Comentários explicativos.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 6 - ReplaceWith</title>
+</head>
+
+<body>
+    <h1>Substituindo Elementos</h1>
+    <p id="textoOriginal">Este é o texto original.</p>
+    <button id="botaoTrocar">Trocar Texto</button>
+    <script src="script.js"></script>
+</body>
+
+</html>

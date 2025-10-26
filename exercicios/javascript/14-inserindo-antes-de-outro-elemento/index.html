@@ -1,0 +1,36 @@
+<!--
+1. No <script>, selecione #minhaLista, #item2 e o botão #inserirItem1
+2. Ao clicar no botão:
+
+• Verifique se já existe um elemento #item1. Se existir, mostre um alert("Item 1
+já inserido.") e não insira novamente.
+• Caso contrário, crie um <li id="item1">Item 1</li> e insira-o antes de #item2
+usando minhaLista.insertBefore(novoItem, item2).
+
+3. Requisitos técnicos obrigatórios
+• Uso de insertBefore.
+• Checagem prévia para evitar inserções múltiplas
+(document.querySelector("#item1")).
+• Atribuição de id para o item inserido.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade 4 - Inserir Antes</title>
+</head>
+
+<body>
+    <h1>Inserindo Antes</h1>
+    <ul id="minhaLista">
+        <li id="item2">Item 2</li>
+        <li>Item 3</li>
+    </ul>
+    <button id="inserirItem1">Inserir Item 1 Antes do Item 2</button>
+    <p id="mensagem"></p>
+    <script src="script.js"></script>
+</body>
+
+</html>

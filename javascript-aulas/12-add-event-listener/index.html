@@ -1,0 +1,39 @@
+<!--
+Estrutura básica de um evento:
+elemento.addEventListener("nomeDoEvento", funcaoManipuladora);
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-
+scale=1.0">
+    <title>Eventos</title>
+
+</head>
+
+<body>
+    <button id="meuBotao">Clique-me!</button>
+    <p id="mensagem"></p>
+    <script>
+        const meuBotao = document.querySelector("#meuBotao");
+        const mensagem = document.querySelector("#mensagem");
+        function handleClick() {
+            mensagem.textContent = "Botão clicado!";
+            console.log("O botão foi clicado!");
+        }
+        // Adicionando o event listener
+        meuBotao.addEventListener("click", handleClick);
+        // Você também pode usar uma função anônima:
+        // meuBotao.addEventListener("mouseover", function() {
+        // mensagem.textContent = "Mouse sobre o botão!";
+        // }); 
+    </script>
+</body>
+
+</html>

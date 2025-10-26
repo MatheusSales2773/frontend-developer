@@ -1,0 +1,38 @@
+<!--
+Enunciado:
+Você deve criar um script que simule um semáforo.
+1. No JavaScript, use getElementById ou querySelector para selecionar os círculos e
+os botões.
+2. Use addEventListener("click", ...) para detectar o clique nos botões.
+3. Ao clicar, altere o backgroundColor da luz correspondente e coloque as demais
+como vermelho, amarelo e verde.
+4. Crie uma pasta com 3 arquivos, um index.html, style.css e outro script.js.
+-->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semáforo Interativo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Semáforo Interativo</h1>
+    <div class="semaforo">
+        <div id="vermelho" class="luz"></div>
+        <div id="amarelo" class="luz"></div>
+        <div id="verde" class="luz"></div>
+    </div>
+    <div class="botoes">
+        <button id="btn-vermelho">Vermelho</button>
+        <button id="btn-amarelo">Amarelo</button>
+        <button id="btn-verde">Verde</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
